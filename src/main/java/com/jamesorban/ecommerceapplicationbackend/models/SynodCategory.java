@@ -1,27 +1,28 @@
-package com.jamesorban.ecommerceapplicationbackend.model;
+package com.jamesorban.ecommerceapplicationbackend.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import lombok.experimental.SuperBuilder;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
+import lombok.Builder;
 
-import javax.validation.constraints.NotNull;
 
+import java.io.Serializable;
 
-@Table("color")
+@Table("synod_category")
 @Data
 @ToString
-@SuperBuilder
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Color {
+public class SynodCategory implements Serializable {
 
     @Id
     private int id;
 
-    @NotNull
-    private String type;
+    private String name;
+
+    private String description;
 }

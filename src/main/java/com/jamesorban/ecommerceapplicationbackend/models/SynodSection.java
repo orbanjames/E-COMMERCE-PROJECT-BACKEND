@@ -1,29 +1,25 @@
-package com.jamesorban.ecommerceapplicationbackend.model;
+package com.jamesorban.ecommerceapplicationbackend.models;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import lombok.experimental.SuperBuilder;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
-import javax.validation.constraints.NotNull;
-
-
-@Table("company")
+@Table("synod_section")
 @Data
 @ToString
-@SuperBuilder
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Company {
+public class SynodSection {
 
     @Id
     private int id;
 
-    @NotNull
     private String name;
 
+    private SynodCategory category;
 }
-

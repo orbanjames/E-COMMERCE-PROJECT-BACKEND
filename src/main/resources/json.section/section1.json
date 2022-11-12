@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "name": "Database",
+  "category": {
+    "id": 1,
+    "name": "RELIGIOUS",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse venenatis erat nibh, vitae sollicitudin arcu sodales et. Suspendisse pulvinar lacus in nisi hendrerit malesuada. Integer accumsan ipsum ac nisi mollis tristique. Vivamus sed erat odio. Nunc at orci pharetra, tincidunt nunc sit amet, mattis lectus"
+  }
+}

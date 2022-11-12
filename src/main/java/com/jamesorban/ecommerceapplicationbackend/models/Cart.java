@@ -1,4 +1,4 @@
-package com.jamesorban.ecommerceapplicationbackend.model;
+package com.jamesorban.ecommerceapplicationbackend.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,17 +11,23 @@ import org.springframework.data.relational.core.mapping.Table;
 import javax.validation.constraints.NotNull;
 
 
-@Table("category")
+@Table("cart")
 @Data
 @ToString
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Category {
+public class Cart {
 
     @Id
     private int id;
 
     @NotNull
-    private String name;
+    private Product product;
+
+    private int quantity;
+
+    private int price;
+
+    private int subtotal;
 }

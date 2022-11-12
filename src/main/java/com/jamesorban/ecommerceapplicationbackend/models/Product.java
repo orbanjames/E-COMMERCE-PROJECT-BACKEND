@@ -1,4 +1,4 @@
-package com.jamesorban.ecommerceapplicationbackend.model;
+package com.jamesorban.ecommerceapplicationbackend.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -29,7 +29,7 @@ public class Product {
 
     private int price;
 
-    private Category category;
+    private SynodCategory synodCategory;
     private Company company;
     private Color color;
 }
