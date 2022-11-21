@@ -11,13 +11,14 @@ import org.springframework.data.relational.core.mapping.Table;
 import javax.validation.constraints.NotNull;
 
 
+
 @Table("product")
 @Data
 @ToString
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Product {
+public class Product  {
 
     @Id
     private int id;
@@ -29,7 +30,7 @@ public class Product {
 
     private int price;
 
-    private SynodCategory synodCategory;
+    private ProductCategory productCategory;
     private Company company;
     private Color color;
 }
